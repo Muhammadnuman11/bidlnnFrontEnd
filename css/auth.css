@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login */
+
+.sign {
+    width: 100%;
+    height: 100vh;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign .signContainer {
+    width: 70%;
+    height: 90%;
+    box-shadow: 0 0 10px #ff55ad;
+    border-radius: 8px;
+    display: flex;
+}
+
+.sign .signContainer .signContainerLeft {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sign .signContainer h1 {
+    font-size: 32px;
+    color: #ff55ad;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.sign .signContainer input {
+    padding: 8px 12px;
+    width: 90%;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid #ff55ad;
+    color: #ff55ad;
+    margin-top: 30px;
+    background: transparent;
+}
+
+.sign .signContainer input::placeholder {
+    color: #ff55ad;
+    font-weight: bold;
+}
+
+.sign .signContainer .forgetOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 56px;
+    font-size: 15px;
+}
+
+.sign .signContainer .forgetOption div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign .signContainer .forgetOption div input {
+    width: 16px;
+    height: 16px;
+    margin: 0 4px 0 0;
+    cursor: pointer;
+}
+
+
+.sign .signContainer .forgetOption span {
+    cursor: pointer;
+}
+
+.sign .signContainer .signbtn1 {
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 13px;
+    background: #ff55ad;
+    border: 2px solid #ff55ad;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 8px 48px;
+    margin-top: 16px;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+}
+
+.sign .signContainer .signbtn1:hover {
+    background: #f7f7f7;
+    color: #ff55ad;
+}
+
+.sign .signContainerRight {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #ff55ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.sign .signContainerRight h1 {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.sign .signContainerRight p {
+    font-size: 16px;
+    width: 56%;
+    text-align: center;
+    margin: 20px 0;
+    color: #f7f7f7;
+}
+
+.sign .signContainerRight .signbtn2 {
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 13px;
+    background: transparent;
+    border: 2px solid #f7f7f7;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 8px 48px;
+    margin-top: 16px;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+}
+
+.sign .signContainerRight .signbtn2:hover {
+    background: #f7f7f7;
+    color: #ff55ad;
+}
+
+.regBtn {
+    display: none;
+    height: 50%;
+    text-align: center;
+}
+
+.regBtn button {
+    border: none;
+    background: transparent;
+    color: #ff55ad;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .sign .signContainer {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .sign .signContainerRight {
+        display: none;
+    }
+
+    .regBtn {
+        display: block;
+    }
+}
+
+/* Register */
+.register {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.register .registerContainer {
+    width: 70%;
+    height: 90%;
+    box-shadow: 0 0 20px #ff55ad;
+    /* display: flex; */
+    border-radius: 10px;
+}
+
+.register .registerContainer .registerContainerLeft {
+    width: 100%;
+    height: 100%;
+    background: #ff55ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.register .registerContainer h1 {
+    font-size: 32px;
+    color: #f7f7f7;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.register .registerContainer input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid #f7f7f7;
+    color: #f7f7f7;
+    background: transparent;
+    margin: 10px;
+}
+
+.register .registerContainer input::placeholder {
+    color: #f7f7f7;
+}
+
+.register .registerContainer .forgetOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    font-size: 15px;
+    padding: 0 18px;
+}
+
+.register .registerContainer .forgetOption div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .registerContainer .forgetOption div input {
+    width: 18px;
+    height: 18px;
+    margin: 0 4px 0 0;
+    cursor: pointer;
+    border: none;
+}
+
+
+.register .registerContainer .forgetOption span {
+    cursor: pointer;
+}
+
+.register .registerContainer .signbtn1 {
+    color: #ff55ad;
+    font-weight: bold;
+    font-size: 13px;
+    background: #f7f7f7;
+    border: 2px solid #f7f7f7;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 48px;
+    margin-top: 16px;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+    width: 60%;
+}
+
+.register .registerContainer .signbtn1:hover {
+    background: #ff55ad;
+    color: #f7f7f7;
+}
+
+.register .registerContainer .signbtn2 {
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+    .register .registerContainer {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .register .registerContainer .registerContainerLeft {
+        background: #f7f7f7;
+        border-radius: 0;
+    }
+
+    .register .registerContainer h1 {
+        color: #ff55ad;
+    }
+
+    .register .registerContainer input {
+        margin: 10px 0;
+        border: 2px solid #ff55ad;
+        color: #ff55ad;
+    }
+
+    .register .registerContainer input::placeholder {
+        color: #ff55ad;
+    }
+
+    .register .registerContainer .signbtn1 {
+        color: #f7f7f7;
+        background: #ff55ad;
+        border: 2px solid #ff55ad;
+    }
+
+    .register .registerContainer .signbtn1:hover {
+        background: #f7f7f7;
+        color: #ff55ad;
+    }
+
+    .register .registerContainer .signbtn2 {
+        color: #ff55ad;
+    }
+}
